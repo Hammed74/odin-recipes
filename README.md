@@ -1,0 +1,1 @@
+Creating a recipe website centered around sweets. The website will contain 3 different sweets.
