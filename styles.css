@@ -8,7 +8,7 @@ h1{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     margin-top: 65px ;
-    background-image: linear-gradient(90deg,#0496ff 30%, #D81159, #FFBC42 80%);
+    background-image: linear-gradient(90deg,#0496ff 30%, #D81159, #FFBC42 70%);
     -webkit-background-clip: text;
     color: transparent
 }
@@ -27,6 +27,12 @@ h2{
     justify-content: space-around;
     padding-top: 100px;
     gap: 10px;
+}
+
+@media (max-width: 700px){
+.buttons{
+    flex-direction: column;
+}
 }
 button{
     min-width: 200px;
@@ -79,6 +85,15 @@ button:hover a{
 background-image: url(images/Oreo.jpeg);
 background-size: cover;
 }
+#button-2:active{
+    background-image: url(images/Red-Velvet-Cake.jpg);
+    background-size: contain;
+    
+}
+#button-3:active{
+    background-image: url(images/Banana-pudding.jpg);
+    background-size: cover;
+}
 
 .oreo-header{
     color: black;
@@ -99,10 +114,24 @@ background-size: 70px 70px;
     margin-right: 20px;
     transform: translateY(35%); 
 }
-.oreo-instructions li{
+.oreo-instructions, .velvet-list, .banana-list li{
    font-size: 32px;
    
 }
 h3{
     font-size: 52px;
 }
+
+.Velvet-head{
+    color: black;
+}
+.velvet-list li{
+margin: 20px 20px;
+}
+
+.banana-head{
+ color:black;   
+}
+ .banana-list li{
+margin: 20px 20px;
+ }
